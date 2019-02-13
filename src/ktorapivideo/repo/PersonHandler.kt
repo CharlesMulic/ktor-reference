@@ -7,9 +7,9 @@ import io.ktor.response.respond
 import io.ktor.util.pipeline.PipelineContext
 import ktorapivideo.errorAware
 import ktorapivideo.respondSuccessJson
-import java.lang.IllegalArgumentException
 
 object PersonHandler {
+
     fun getPersonById(): suspend PipelineContext<Unit, ApplicationCall>.(Unit) -> Unit {
         return {
             errorAware {
